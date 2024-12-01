@@ -1,0 +1,13 @@
+
+CREATE DATABASE IF NOT EXISTS desafionode;
+
+CREATE TABLE IF NOT EXISTS `desafionode`.`people` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`));
+
+GRANT ALL PRIVILEGES ON desafionode.* TO 'usuario'@'%';
+
+FLUSH PRIVILEGES;
+ 
+
